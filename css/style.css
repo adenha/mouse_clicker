@@ -1,0 +1,13 @@
+.mouse{
+    width:50vw;
+}
+@media only screen and (min-width:9px) {
+.dae{
+    display: none;
+}
+}
+@media only screen and (min-width:10px) {
+.mouse{
+    color: rgb(37, 100, 151);
+}
+}

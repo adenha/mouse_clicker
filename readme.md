@@ -1,0 +1,1 @@
+The goal of this project is to make a clicker game about computer mice and the implict humor that comes from that situation.
