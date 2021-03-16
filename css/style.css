@@ -2,6 +2,15 @@
     width:50vw;
     height: 60vh;
 }
+.buymenu{
+    width: 48vw;
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+}
+button:nth-of-type(even){
+    background-color: aquamarine;
+}
 button:hover{
     cursor: pointer;
 }
