@@ -1,26 +1,64 @@
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.clicker .total .buymenu {
+    flex: 1 50%;
+    box-sizing: border-box;
+}
+.count{
+    margin-top: 20vh;
+}
 .mouse{
-    width:50vw;
+    width:90vw;
     height: 60vh;
+    order: -2;
 }
 .buymenu{
-    width: 48vw;
     display: flex;
     margin: 0px;
     flex-direction: column;
+    flex-grow: 1;
+}
+.total{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    height: 100px;
+    flex-grow: 0.5;
+}
+.buybutton{
+    height: 15vh;
+}
+.objects{
+    height: 14vh;
+    width: 14vh;
+    display: inline-block;
+}
+.ownedTotal{
+    display: inline;
 }
 button:nth-of-type(even){
-    background-color: aquamarine;
+    background-color: darkgrey;
 }
 button:hover{
     cursor: pointer;
 }
-@media only screen and (min-width:9px) {
-.dae{
-    display: none;
-}
-}
-@media only screen and (min-width:10px) {
+@media only screen and (min-width:394px) {
 .mouse{
-    color: rgb(37, 100, 151);
+    width:49vw;
+}
+}
+@media only screen and (min-width:720px) {
+.total{
+    order: -1;
+    flex-flow: column;
+    height: 60vh;
+}
+.total, .mouse, .buymenu{
+    width: 33vw;
+}
+.flex{
+    flex-wrap: nowrap;
 }
 }
