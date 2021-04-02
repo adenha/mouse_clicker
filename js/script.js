@@ -1,4 +1,5 @@
 let currentMice = 0;
+let currentMPS = 0;
 const costScale = 0.25;
 const upgrades = [
     {
@@ -46,12 +47,17 @@ function micePerSecond() {
     }
 }
 function buyMenu(index) {
+    let dae = 0
     if (currentMice >= Math.round(upgrades[index].price)) {
         currentMice -= Math.round(upgrades[index].price * ((costScale * upgrades[index].owned) + 1))
         upgrades[index].owned++
         document.querySelector(`.${upgrades[index].name}`).innerHTML = `${upgrades[index].name} $:${Math.round(upgrades[index].price * ((costScale * upgrades[index].owned) + 1))}`
         document.querySelector(`.img${upgrades[index].name}`).innerHTML = `x${upgrades[index].owned}`
+        for (let index = 0; index < upgrades.length; index++) {
+            dae += upgrades[index].mps*upgrades[index].owned;}
         document.querySelector('.count').innerHTML = `${currentMice} Mice`
+        currentMPS = dae
+        document.querySelector('.mps').innerHTML = `Current Mice per Second ${currentMPS}`
     }
 }
 function mouseClick() {

@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 .count{
-    margin-top: 20vh;
+    margin-top: 9vh;
 }
 .mouse{
     width:90vw;
@@ -24,7 +24,6 @@
     display: flex;
     flex-wrap: wrap; 
     flex-direction: row;
-    height: 100px;
     flex-grow: 0.5;
 }
 .buybutton{
@@ -44,12 +43,12 @@ button:nth-of-type(even){
 button:hover{
     cursor: pointer;
 }
-@media only screen and (min-width:394px) {
+@media only screen and (min-width:500px) {
 .mouse{
     width:49vw;
 }
 }
-@media only screen and (min-width:720px) {
+@media only screen and (min-width:960px) {
 .total{
     order: -1;
     flex-flow: column;
